@@ -34,14 +34,17 @@ class elasticsearch::params {
     'Linux': {
       $elasticsearch_user  = 'elasticsearch'
       $elasticsearch_group = 'elasticsearch'
+      $elasticsearch_chmod = '0755'
     }
     'Darwin': {
       $elasticsearch_user  = 'elasticsearch'
       $elasticsearch_group = 'elasticsearch'
+      $elasticsearch_chmod = '0755'
     }
     'OpenBSD': {
       $elasticsearch_user  = '_elasticsearch'
       $elasticsearch_group = '_elasticsearch'
+      $elasticsearch_chmod = '0755'
     }
     default: {
       fail("\"${module_name}\" provides no user/group default value

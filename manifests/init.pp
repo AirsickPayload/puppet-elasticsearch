@@ -349,6 +349,7 @@ class elasticsearch(
   $default_logging_level          = 'INFO',
   $elasticsearch_group            = $elasticsearch::params::elasticsearch_group,
   $elasticsearch_user             = $elasticsearch::params::elasticsearch_user,
+  $elasticsearch_chmod            = $elasticsearch::params::elasticsearch_chmod,
   $file_rolling_type              = 'dailyRollingFile',
   $indices                        = undef,
   $indices_hiera_merge            = false,
